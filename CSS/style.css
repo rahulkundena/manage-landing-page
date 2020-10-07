@@ -1,0 +1,139 @@
+body{
+    overflow-x: hidden;
+}
+.bg{
+    background-image: url(../images/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    height: 815px;
+    width: 815px;
+    margin-top: -55%;
+    margin-left: 10%;
+    position: absolute;
+    z-index: -1;
+}
+.img{
+    position: relative;
+}
+.header{
+    margin-top: 25px;
+    align-items: center;
+}
+.menu_link a{
+    color: hsl(228, 39%, 23%);
+    margin: 0 20px;
+    text-decoration: none;
+}
+.menu_link a:hover{
+    color: hsl(12, 88%, 59%);
+}
+.black_or{
+    position: relative;
+    color: white;
+    background-color: hsl(12, 88%, 59%);
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 2px solid hsl(12, 88%, 59%);
+    font-weight: 500;
+}
+.black_or:hover{
+    color: hsl(12, 88%, 59%);
+    background-color: white;
+    transition: 0.5s ease;
+}
+.light{
+    margin: 20px 20px;
+}
+.text{
+    align-items: center;
+    margin-top: 150px;
+}
+.text1{
+    align-items: center;
+    margin-top: 150px;
+}
+.text2{
+    align-items: center;
+    margin-top: 150px;
+    text-align: center;
+}
+.text3{
+    align-items: center;
+    margin-top: 150px;
+    text-align: center;
+    background-color: hsl(12, 88%, 59%);
+    color: white;
+    padding: 30px;
+}
+.btn_wt{
+    background-color: white;
+    color: hsl(12, 88%, 59%);
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-weight: 700;
+}
+h4{
+    font-size: 30px;
+    width: 70%;
+    text-align: left;
+}
+
+.col{
+    color: hsl(228, 39%, 23%);
+}
+p{
+    color: hsl(227, 12%, 61%);
+}
+.num{
+    color: white;
+    background-color: hsl(12, 88%, 59%);
+    padding: 10px 25px;
+    border-radius: 30px;
+}
+.title{
+    font-weight: 700;
+    color: hsl(228, 39%, 23%);
+}
+.bg-2{
+    background-image: url(../images/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    height: 815px;
+    width: 815px;
+    margin-top: 10%;
+    margin-left: -110%;
+    position: absolute;
+    z-index: -1;
+}
+.card{
+    background-color: hsl(0, 0%, 98%);
+    border: none;
+}
+.card img{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-top: -10%;
+}
+footer{
+    background-color: hsl(233, 12%, 13%);
+    color: white;
+    text-align: center;
+}
+.tag{
+    color: white;
+}
+.tag:hover{
+    color: hsl(12, 88%, 59%);
+    text-decoration: none;
+    transition: 0.5 ease all;
+}
+.mail{
+    width: 250px;
+}
+.cr{
+    margin-top: 70px;
+}
+.submit{
+    font-weight: 500;
+    color: white;
+    background-color: hsl(12, 88%, 59%);
+}
