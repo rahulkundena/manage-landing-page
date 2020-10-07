@@ -1,6 +1,15 @@
 body{
     overflow-x: hidden;
 }
+header{
+    margin-top: 15px;
+}
+.navbar-nav{
+    margin-left: 0;
+}
+.navbar-nav .nav-link {
+    font-size: 1rem;
+}
 .bg{
     background-image: url(../images/bg-tablet-pattern.svg);
     background-repeat: no-repeat;
@@ -18,25 +27,34 @@ body{
     margin-top: 25px;
     align-items: center;
 }
-.menu_link a{
-    color: hsl(228, 39%, 23%);
-    margin: 0 20px;
+.nav-item a{
+    color: hsl(228, 39%, 23%) !important;
+    margin: auto;
+    padding: auto;
     text-decoration: none;
+    align-items: center;
+    font-weight: 500;
 }
-.menu_link a:hover{
-    color: hsl(12, 88%, 59%);
+.nav-item a:hover{
+    color: hsl(12, 88%, 59%) !important;
 }
 .black_or{
     position: relative;
-    color: white;
+    color: white !important;
     background-color: hsl(12, 88%, 59%);
-    padding: 10px 30px;
+    padding: 5px 25px;
     border-radius: 30px;
     border: 2px solid hsl(12, 88%, 59%);
     font-weight: 500;
 }
+.black_or a{
+    color: white!important;
+}
+.black_or a:hover{
+    color: hsl(228, 39%, 23%) !important;
+}
 .black_or:hover{
-    color: hsl(12, 88%, 59%);
+    color: hsl(12, 88%, 59%) !important;
     background-color: white;
     transition: 0.5s ease;
 }
@@ -136,4 +154,43 @@ footer{
     font-weight: 500;
     color: white;
     background-color: hsl(12, 88%, 59%);
+}
+@media(max-width:1000px){
+    .bg{
+        display: none !important;
+    }
+    body{
+        text-align: center;
+    }
+}
+@media(max-width:1200px){
+    .mail{
+        margin: 0 auto;
+    }
+}
+@media(max-width:650px){
+    .bg-2{
+        display: none !important;
+    }
+    body{
+        text-align: center;
+    }
+}
+@media(max-width:380px){
+    .mail{
+        width: 200px;
+    }
+}
+@media(max-width:270px){
+    .mail{
+        width: 150px;
+    }
+}
+@media (min-width:768px){
+    .top-bar.bg-success{
+        background-color: transparent !important;
+    }
+    .navbar-nav{
+        margin-left: 100px;
+    }
 }

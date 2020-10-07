@@ -17,25 +17,38 @@
   <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-  <header>
-    <div>
-      <section class="header-sec no_color_sticky">
+  <header id="header" >
+    <div class="top-bar bg-color w-100">
         <div class="container">
-          <div class="row justify-content-around header">
-            <div class="logo">
-              <a href="#"><img src="images/logo.svg" alt="..."></a>
+            <nav class="navbar bg-transparent navbar-dark navbar-expand-md justify-content-between">
+              <a href="#" class="navbar-brand"><img src="images/logo.svg" alt=""></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+                <span class="navbar-toggler-icon"><img src="images/icon-hamburger.svg" id="close" alt=""></span>
+              </button>
+              <div id="menu" class="collapse navbar-collapse">
+                <ul class="navbar-nav align-items-center justify-content-between w-100">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Product</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">Community</a>
+                  </li>                  
+                  <li class="nav-item black_or">
+                    <a href="#" class="nav-link btn_or">Get Started</a>
+                  </li>
+                </ul>
             </div>
-            <div class="menu_link">
-              <a href="#">Pricing</a>
-              <a href="#">Product</a>
-              <a href="#">About Us</a>
-              <a href="#">Careers</a>
-              <a href="#">Community</a>
-            </div>
-            <button class="btn black_or" href="#">Get Started</button>
-            </div>
+            </nav>
         </div>
-      </section>
     </div>
   </header>
   <section class="text">
@@ -50,7 +63,7 @@
         </div>
         <div class="col-xl-6 col-sm-12 ">
           <div class="bg"></div>
-          <img src="images/illustration-intro.svg" class="img" alt="">
+          <img src="images/illustration-intro.svg" class="img img-fluid" alt="">
         </div>
       </div>
     </div>
@@ -115,7 +128,7 @@
         <div class="carousel-item mt-5 active">
           <div class="row justify-content-around">
             <div class="col-4 text-center">
-            <div class="card mt-5">
+            <div class="card card1 mt-5">
               <img src="images/avatar-ali.png" alt="photo">
               <div class="card-body">
                 <h4>Ali Bravo</h4>
@@ -124,7 +137,7 @@
             </div>
             </div>
             <div class="col-4 text-center">
-            <div class="card mt-5">
+            <div class="card card2 mt-5">
               <img src="images/avatar-anisha.png" alt="photo">
               <div class="card-body">
                 <h4>Anisha Li</h4>
@@ -133,7 +146,7 @@
             </div>
             </div>
             <div class="col-4 text-center">
-            <div class="card mt-5">
+            <div class="card card3 mt-5">
               <img src="images/avatar-richard.png" alt="photo">
               <div class="card-body">
                 <h4>Richard Watts</h4>
@@ -212,7 +225,7 @@
             <img src="images/icon-instagram.svg" class="m-auto " alt="">
           </div>
         </div>
-        <div class="col-xl-3 col-md-6 col-sm-12">
+        <div class="col-xl-3 col-md-6 col-sm-12 mt-3">
           <a href="#" class="tag">
             <h6 class="lead">Home</h6>
           </a>
@@ -226,7 +239,7 @@
             <h6 class="lead">About Us</h6>
           </a>
         </div>
-        <div class="col-xl-3 col-md-6 col-sm-12">
+        <div class="col-xl-3 col-md-6 col-sm-12 mt-3">
           <a href="#" class="tag">
             <h6 class="lead">Careers</h6>
           </a>
@@ -237,10 +250,10 @@
             <h6 class="lead">Privacy Policy</h6>
           </a>
         </div>
-        <div class="col-xl-3 col-md-6 col-sm-12">
+        <div class="col-xl-3 col-md-6 col-sm-12 mt-3">
           <div class="mail">
             <form name="form1" action="#">
-              <div class="input-group">
+              <div class="input-group justify-content-center">
                 <input type="text" class="form-control mail" placeholder="Updates in your inbox..." name="text5" aria-label="" aria-describedby="basic-addon1">
                 <div class="input-group-append">
                   <button class="btn submit" type="button" onclick="ValidateEmail(document.form1.text5)">Go</button>
